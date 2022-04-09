@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Langoo-React-Template/static/css/main.609e28b7.css",
+    "main.js": "/Langoo-React-Template/static/js/main.478e15cd.js",
+    "static/js/27.05de4a9f.chunk.js": "/Langoo-React-Template/static/js/27.05de4a9f.chunk.js",
+    "static/media/image1.png": "/Langoo-React-Template/static/media/image1.f6421466fe36619ae135.png",
+    "static/media/image2.jpg": "/Langoo-React-Template/static/media/image2.aa209813b3dd3f4ddcbd.jpg",
+    "static/media/lang.jpg": "/Langoo-React-Template/static/media/lang.87ebc960263fd32aacb4.jpg",
+    "static/media/mobile.png": "/Langoo-React-Template/static/media/mobile.cbf6467e948ef52aeadd.png",
+    "index.html": "/Langoo-React-Template/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.609e28b7.css",
+    "static/js/main.478e15cd.js"
+  ]
+}
