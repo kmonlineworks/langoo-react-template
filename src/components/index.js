@@ -1,0 +1,11 @@
+export { default as Navbar } from './navbar/Navbar';
+export { default as Header } from './header/Header';
+export { default as Circles } from './circles/Circles';
+export { default as Services } from './services/Services';
+export { default as Testimonial } from './testimonial/Testimonial';
+export { default as Footer } from './footer/Footer';
+export { default as Become } from './become/Become';
+export { default as Button } from './button/Button';
+export { default as Design } from './design/Design';
+export { default as BackTop } from './backtop/BackTop';
+export { default as Element } from './element/Element';

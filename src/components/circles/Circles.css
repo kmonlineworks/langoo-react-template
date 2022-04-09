@@ -1,0 +1,75 @@
+.big-circles {
+	width: 420px;
+	height: 420px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	border: 1px solid rgba(var(--primary-color-2), 0.3);
+	border-radius: 50%;
+}
+
+.big-circles:before {
+	content: '';
+	width: 340px;
+	height: 340px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid rgba(var(--primary-color-2), 0.5);
+	border-radius: 50%;
+}
+
+.big-circles:after {
+	content: '';
+	width: 300px;
+	height: 300px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid rgba(var(--primary-color-2), 0.8);
+	border-radius: 50%;
+}
+
+.dots {
+	width: 10px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	z-index: 2;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 0px 15px 1px 1px rgb(var(--primary-color-1)),
+		0px 300px 1px 1px rgb(var(--primary-color-2)),
+		-100px 150px 1px 1px rgba(var(--primary-color-1), 0.8),
+		50px 100px 1px 1px rgba(255, 255, 255, 0.8),
+		300px 15px 1px 1px rgba(255, 255, 255, 0.8),
+		50px 15px 1px 1px rgba(255, 255, 255, 0.5),
+		300px 100px 1px 1px rgba(255, 255, 255, 0.8),
+		350px 200px 1px 1px rgb(var(--primary-color-1));
+}
+
+@media screen and (max-width: 768px) {
+	.big-circles {
+		width: 380px;
+		height: 380px;
+		left: 50%;
+	}
+
+	.big-circles:before {
+		width: 320px;
+		height: 320px;
+	}
+
+	.big-circles:after {
+		width: 280px;
+		height: 280px;
+	}
+}

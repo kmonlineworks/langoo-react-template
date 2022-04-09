@@ -1,0 +1,16 @@
+button {
+	font-size: 14px;
+	padding: 8px 20px;
+	border: 3px solid rgb(var(--primary-color-1));
+	border-radius: 30px;
+	color: rgba(var(--text-color-2), 1);
+	background-color: rgba(var(--primary-color-1), 0.1);
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+button:hover {
+	background-color: rgba(var(--primary-color-1), 0.2);
+}
+button span {
+	font-weight: bold;
+}

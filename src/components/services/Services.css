@@ -1,0 +1,127 @@
+.services {
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+}
+
+.services h2 {
+	font-size: 28px;
+	color: rgb(var(--text-color-1));
+	padding: 30px 15px 15px 0px;
+	margin-bottom: 30px;
+	display: inline-block;
+	border-bottom: 3px dashed rgb(var(--primary-color-1));
+	position: relative;
+}
+
+.services h2:before {
+	content: '+';
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 20px;
+	color: rgb(var(--primary-color-1));
+}
+
+.services .signup {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.services .service-design {
+	width: 100%;
+	display: block;
+	border-bottom: 2px dotted rgba(var(--primary-color-1), 1);
+	position: absolute;
+	top: 58%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.services .service-design .dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgb(var(--primary-color-2));
+	position: relative;
+	top: 6px;
+}
+
+.services .service-design .dot:nth-child(1) {
+	left: -2%;
+}
+
+.services .service-design .dot:nth-child(3) {
+	right: -2%;
+}
+
+.services .services-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.services .service-item {
+	text-align: center;
+}
+
+.services .service-item .service-icon {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	margin: 15px auto;
+	margin-bottom: 50px;
+}
+
+.services .service-item .service-icon svg {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	box-shadow: var(--boxShadow);
+	border-radius: 30px;
+}
+
+.services .service-item .service-icon svg path {
+	fill: rgba(var(--primary-color-1), 0.3);
+	transform: translate(50%, 50%);
+}
+
+.services .service-item .service-icon img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+}
+
+.services .service-item .service-text p {
+	font-size: 15px;
+	color: rgb(var(--text-color-2));
+	letter-spacing: 0.6px;
+	line-height: 20px;
+	margin: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.services {
+		margin-top: 50px;
+	}
+	.services .service-design {
+		display: none;
+	}
+	.services h2 {
+		margin-bottom: 15px;
+	}
+	.services .services-content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}

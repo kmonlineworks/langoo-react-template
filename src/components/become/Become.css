@@ -1,0 +1,96 @@
+.become-bg {
+	position: relative;
+	overflow: hidden;
+}
+
+.become {
+	margin-top: 100px;
+}
+
+.become h2 {
+	font-size: 28px;
+	color: rgb(var(--text-color-1));
+	padding: 30px 15px 15px 0px;
+	margin-bottom: 30px;
+	display: inline-block;
+	border-bottom: 3px dashed rgb(var(--primary-color-1));
+	position: relative;
+}
+
+.become h2:before {
+	content: '%';
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 20px;
+	color: rgb(var(--primary-color-1));
+}
+
+.become .become-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+}
+
+.become .become-content .become-text {
+	flex: 1;
+}
+
+.become .become-content .become-text p {
+	font-size: 15px;
+	color: rgb(var(--text-color-2));
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+
+.become .become-content .become-design {
+	position: relative;
+	flex: 1;
+}
+
+.become .become-content .become-design .become-box {
+	position: relative;
+	bottom: 100px;
+	z-index: 3;
+}
+
+.become .become-content .become-design .become-box img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+	.become-bg .design {
+		top: 330px !important;
+	}
+	.become .big-circles {
+		top: 100% !important;
+		left: 00% !important;
+	}
+	.become .become-content .become-design .become-box {
+		bottom: 0px;
+		left: 10%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.become-bg .design {
+		display: none;
+	}
+	.become .big-circles {
+		top: 100% !important;
+		left: 00% !important;
+	}
+	.become .become-content {
+		flex-direction: column;
+	}
+	.become .become-content .become-design .become-box {
+		bottom: 0px;
+		left: 30%;
+	}
+	.become .design-element {
+		left: -30% !important;
+	}
+}

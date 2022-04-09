@@ -1,0 +1,79 @@
+.navbar {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+}
+
+.navbar .logo {
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: baseline;
+}
+
+.navbar .logo a {
+	color: rgb(var(--text-color-1));
+	text-decoration: none;
+}
+
+.navbar .logo span {
+	width: 8px;
+	height: 8px;
+	display: block;
+	background-color: rgb(var(--primary-color-1));
+	border-radius: 50%;
+}
+
+.navbar .toggle {
+	font-size: 20px;
+	color: rgb(var(--primary-color-1));
+	display: none;
+	cursor: pointer;
+}
+
+.navbar .toggle:hover {
+	color: rgba(var(--primary-color-1), 0.5);
+}
+
+.navbar .menu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.navbar .menu li a {
+	font-size: 14px;
+	font-weight: 500;
+	color: rgb(var(--text-color-1));
+	text-transform: uppercase;
+	text-decoration: none;
+	text-decoration-color: rgb(var(--primary-color-1));
+	transition: 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+	text-decoration: underline rgb(var(--primary-color-1)) solid 3px;
+	text-underline-offset: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.navbar .toggle {
+		display: block;
+	}
+	.navbar .menu {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		right: 15px;
+		padding: 30px 15px;
+		background-color: #fff;
+		box-shadow: var(--boxShadow);
+	}
+}
